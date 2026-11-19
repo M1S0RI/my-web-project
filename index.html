@@ -17,16 +17,20 @@
             <ul>
                 <li><a href="#about">Про мене</a></li>
                 <li><a href="#skills">Напрямки діяльності</a></li>
+                <li><a href="#projects">Проєкти</a></li>
                 <li><a href="#contacts">Контакти</a></li>
             </ul>
         </nav>
+        <div class="header-actions">
+            <button id="theme-toggle" type="button">Змінити тему</button>
+            <button id="open-modal" type="button">Контакти</button>
+        </div>
     </header>
 
     <main>
         <section id="about">
             <h2>Про мене</h2>
-            <p>Привіт! Я студент спеціальності «Середня освіта (Інформатика)», який поєднує інтерес до педагогіки та STEM-освіти з практичною інженерією. Моя мета — на власному прикладі показувати, як гармонійно поєднуються гуманітарні та технічні напрямки в рамках STEM-освіти. Я займаюся комплексними проєктами: від розробки вебзастосунків до проєктування авторських музичних інструментів, створення електроніки та обслуговування складної механізованої техніки.</p>
-        </section>
+            <p>Привіт! Я студент спеціальності «Середня освіта (Інформатика)», який поєднує інтерес до педагогіки та STEM-освіти з практичною інженерією. Моя мета — на власному прикладі показувати, як гармонійно поєднуються гуманітарні та технічні напрямки в рамках STEM-освіти. Я займаюся комплексними проєктами: від розробки вебзастосунків до проєктування авторських музичних інструментів, створення електроніки та обслуговування складної механізованої техніки.</p>        </section>
 
         <section id="skills">
             <h2>Напрямки діяльності</h2>
@@ -60,6 +64,11 @@
             </div>
         </section>
 
+        <section id="projects">
+            <h2>Список проєктів</h2>
+            <ul id="projects-list"></ul>
+        </section>
+
         <section id="contacts">
             <h2>Контакти</h2>
             <p>Ви можете знайти мої проєкти на <a href="https://github.com/M1S0RI">GitHub</a> або зв'язатися зі мною для співпраці через електронну пошту: martyniuk.nazar1624@vu.cdu.edu.ua.</p>
@@ -69,5 +78,19 @@
     <footer>
         <p>© 2026 Назар Мартинюк</p>
     </footer>
+
+    <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <h2 id="modal-title">Зворотний зв'язок</h2>
+            <button id="close-modal" type="button">Закрити</button>
+            <form id="contact-form">
+                <label for="user-name">Ваше ім'я</label>
+                <input type="text" id="user-name" placeholder="Наприклад, Олена">
+                <button type="submit">Надіслати</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
